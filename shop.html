@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Urban Lokal Café</title>
+
+<link rel="stylesheet"
+href="shop.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ==========================
+        NAVIGATION BAR
+=========================== -->
+
+<header>
+
+<div class="logo">
+
+<i class="fa-solid fa-mug-hot"></i>
+
+<h2>URBAN LOKAL CAFE</h2>
+
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#menu">Menu</a>
+
+<a href="#special">Specials</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+<div class="header-right">
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search food...">
+
+</div>
+
+<button class="wishlist-btn" id="wishlistButton">
+
+<i class="fa-regular fa-heart"></i>
+
+<span id="wishlistCount">0</span>
+
+</button>
+
+<button
+class="cart-btn"
+id="cartButton">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cartCount">
+
+0
+
+</span>
+
+</button>
+
+</div>
+
+</header>
+
+<!-- ==========================
+        HERO SECTION
+=========================== -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h4>
+
+URBAN LOKAl CAFE Every Day
+
+</h4>
+
+<h1>
+        Meet, Eat, Mingle
+
+<span>
+
+URBAN LOKAL CAFE & Comfort Zone
+
+</span>
+
+</h1>
+
+<p>
+
+Experience handcrafted URBAN LOKAL CAFE
+and delicious meals
+made with love.
+
+Relax,
+work,
+or spend time with friends, Lover.
+
+</p>
+
+<div class="hero-buttons">
+
+<button class="order-btn">
+
+Order Now
+
+</button>
+
+<button class="menu-btn">
+
+Explore Menu
+
+</button>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img
+src="c:\Karthik\urban.jpeg"
+alt="URBAN LOKAL CAFE">
+
+</div>
+
+</section>
+<!-- ==========================
+        WEDNESDAY SPECIAL
+=========================== -->
+
+<section class="Friday-offer" id="offers">
+
+<div class="offer-content">
+
+<div class="offer-left">
+
+<span class="offer-tag">
+
+Every Friday
+
+</span>
+
+<h2>
+
+        FRIDAY Tangi Chicken 30% Offer
+
+</h2>
+
+<p>
+
+Buy any 2 Handcrafted coffees and get
+1 Classic Pizza absolutely FREE.
+
+Offer valid every Friday
+from 9:00 AM to 9:00 PM.
+
+</p>
+
+<button class="offer-btn">
+
+Claim Offer
+
+</button>
+
+</div>
+
+<div class="offer-right">
+
+<div class="offer-card">
+
+<h1>
+
+BUY 2
+
+</h1>
+
+<h3>
+
+GET 1 FREE
+
+</h3>
+
+<p>
+
+Applicable on all
+Eat & Meet
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+        TODAY'S SPECIAL
+=========================== -->
+
+<section class="special" id="special">
+
+<h2>
+
+Today's Specials
+
+</h2>
+
+<div class="special-grid">
+
+<div class="special-card">
+
+<i class="fa-solid fa-fire"></i>
+
+<h3>
+Signature cafe
+
+</h3>
+
+<p>
+
+</p>
+
+</div>
+
+<div class="special-card">
+
+<i class="fa-solid fa-cake-candles"></i>
+
+<h3>
+
+Chocolate Lava Cake
+
+</h3>
+
+<p>
+
+Freshly baked
+served warm
+with vanilla ice cream.
+
+</p>
+
+</div>
+
+<div class="special-card">
+
+<i class="fa-solid fa-pizza-slice"></i>
+
+<h3>
+
+Italian Pizza
+
+</h3>
+
+<p>
+
+Wood-fired pizza
+loaded with cheese
+and fresh herbs.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== NEXT PART STARTS FROM CATEGORIES ===== -->
+ <!-- ==========================
+        MENU CATEGORIES
+=========================== -->
+
+<section class="categories">
+
+<h2>Explore Our Menu</h2>
+
+<div class="category-grid">
+
+<div class="category" data-category="Coffee">
+<i class="fa-solid fa-mug-hot"></i>
+<p>Coffee</p>
+</div>
+
+<div class="category" data-category="Dessert">
+<i class="fa-solid fa-cake-candles"></i>
+<p>Desserts</p>
+</div>
+
+<div class="category" data-category="Pizza">
+<i class="fa-solid fa-pizza-slice"></i>
+<p>Pizza</p>
+</div>
+
+<div class="category" data-category="Pasta">
+<i class="fa-solid fa-bowl-food"></i>
+<p>Pasta</p>
+</div>
+
+<div class="category" data-category="Drinks">
+<i class="fa-solid fa-glass-water"></i>
+<p>Drinks</p>
+</div>
+
+<div class="category" data-category="Snacks">
+<i class="fa-solid fa-cookie-bite"></i>
+<p>Snacks</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+        MENU
+=========================== -->
+
+<section class="products" id="menu">
+
+<h2>Our Signature Menu</h2>
+
+<div class="product-grid">
+
+<!-- ================= ITEM 1 ================= -->
+
+<div class="product-card"
+data-id="1"
+data-name="Classic Cappuccino"
+data-price="220"
+data-category="Coffee">
+
+<div class="wishlist-icon">
+<i class="fa-regular fa-heart"></i>
+</div>
+
+<span class="badge">BEST SELLER</span>
+
+<img src="c:\Karthik\COFFEE.webp" alt="Cappuccino">
+
+<h3>Classic Cappuccino</h3>
+
+<p>Fresh espresso with creamy milk foam.</p>
+
+<div class="rating">★★★★★</div>
+
+<p class="stock">✔ Freshly Available</p>
+
+<div class="price">
+<h2>₹220</h2>
+<del>₹260</del>
+</div>
+
+<div class="card-buttons">
+
+<button class="buy-btn">
+Order Now
+</button>
+
+<button class="add-cart">
+Add Cart
+</button>
+
+<button class="view-btn">
+Quick View
+</button>
+
+</div>
+
+</div>
+
+<!-- ================= ITEM 2 ================= -->
+
+<div class="product-card"
+data-id="2"
+data-name="Cold Coffee"
+data-price="180"
+data-category="Drinks">
+
+<div class="wishlist-icon">
+<i class="fa-regular fa-heart"></i>
+</div>
+
+<span class="badge new">NEW</span>
+
+<img src="images/coldcoffee.jpg" alt="Cold Coffee">
+
+<h3>Cold Coffee</h3>
+
+<p>Rich chocolate blended chilled coffee.</p>
+
+<div class="rating">★★★★★</div>
+
+<p class="stock">✔ Freshly Available</p>
+
+<div class="price">
+<h2>₹180</h2>
+<del>₹220</del>
+</div>
+
+<div class="card-buttons">
+
+<button class="buy-btn">
+Order Now
+</button>
+
+<button class="add-cart">
+Add Cart
+</button>
+
+<button class="view-btn">
+Quick View
+</button>
+
+</div>
+
+</div>
+
+<!-- ================= ITEM 3 ================= -->
+
+<div class="product-card"
+data-id="3"
+data-name="Chocolate Brownie"
+data-price="190"
+data-category="Dessert">
+
+<div class="wishlist-icon">
+<i class="fa-regular fa-heart"></i>
+</div>
+
+<span class="badge">HOT</span>
+
+<img src="images/brownie.jpg" alt="Brownie">
+
+<h3>Chocolate Brownie</h3>
+
+<p>Warm brownie served with chocolate sauce.</p>
+
+<div class="rating">★★★★★</div>
+
+<p class="stock">✔ Freshly Available</p>
+
+<div class="price">
+<h2>₹190</h2>
+<del>₹240</del>
+</div>
+
+<div class="card-buttons">
+
+<button class="buy-btn">
+Order Now
+</button>
+
+<button class="add-cart">
+Add Cart
+</button>
+
+<button class="view-btn">
+Quick View
+</button>
+
+</div>
+
+</div>
+
+<!-- ================= ITEM 4 ================= -->
+
+<div class="product-card"
+data-id="4"
+data-name="Red Velvet Cake"
+data-price="260"
+data-category="Dessert">
+
+<div class="wishlist-icon">
+<i class="fa-regular fa-heart"></i>
+</div>
+
+<img src="images/redvelvet.jpg" alt="Red Velvet">
+
+<h3>Red Velvet Cake</h3>
+
+<p>Soft layered cake with cream cheese frosting.</p>
+
+<div class="rating">★★★★★</div>
+
+<p class="stock">✔ Freshly Available</p>
+
+<div class="price">
+<h2>₹260</h2>
+<del>₹320</del>
+</div>
+
+<div class="card-buttons">
+
+<button class="buy-btn">Order Now</button>
+
+<button class="add-cart">Add Cart</button>
+
+<button class="view-btn">Quick View</button>
+
+</div>
+
+</div>
+
+<!-- ================= ITEM 5 ================= -->
+
+<div class="product-card"
+data-id="5"
+data-name="Margherita Pizza"
+data-price="420"
+data-category="Pizza">
+
+<div class="wishlist-icon">
+<i class="fa-regular fa-heart"></i>
+</div>
+
+<span class="badge">CHEF'S PICK</span>
+
+<img src="images/pizza.jpg" alt="Pizza">
+
+<h3>Margherita Pizza</h3>
+
+<p>Wood-fired pizza with mozzarella and basil.</p>
+
+<div class="rating">★★★★★</div>
+
+<p class="stock">✔ Freshly Available</p>
+
+<div class="price">
+<h2>₹420</h2>
+<del>₹490</del>
+</div>
+
+<div class="card-buttons">
+
+<button class="buy-btn">Order Now</button>
+
+<button class="add-cart">Add Cart</button>
+
+<button class="view-btn">Quick View</button>
+
+</div>
+
+</div>
+
+<!-- ================= ITEM 6 ================= -->
+
+<div class="product-card"
+data-id="6"
+data-name="Creamy Alfredo Pasta"
+data-price="360"
+data-category="Pasta">
+
+<div class="wishlist-icon">
+<i class="fa-regular fa-heart"></i>
+</div>
+
+<img src="images/pasta.jpg" alt="Pasta">
+
+<h3>Creamy Alfredo Pasta</h3>
+
+<p>Italian white sauce pasta with herbs.</p>
+
+<div class="rating">★★★★★</div>
+
+<p class="stock">✔ Freshly Available</p>
+
+<div class="price">
+<h2>₹360</h2>
+<del>₹430</del>
+</div>
+
+<div class="card-buttons">
+
+<button class="buy-btn">Order Now</button>
+
+<button class="add-cart">Add Cart</button>
+
+<button class="view-btn">Quick View</button>
+
+</div>
+
+</div>
+<!-- ================= ITEM 7 ================= -->
+
+<div class="product-card"
+data-id="7"
+data-name="Club Sandwich"
+data-price="240"
+data-category="Snacks">
+
+<div class="wishlist-icon">
+<i class="fa-regular fa-heart"></i>
+</div>
+
+<span class="badge">POPULAR</span>
+
+<img src="images/sandwich.jpg" alt="Sandwich">
+
+<h3>Club Sandwich</h3>
+
+<p>Grilled sandwich with cheese and vegetables.</p>
+
+<div class="rating">★★★★★</div>
+
+<p class="stock">✔ Freshly Available</p>
+
+<div class="price">
+<h2>₹240</h2>
+<del>₹290</del>
+</div>
+
+<div class="card-buttons">
+
+<button class="buy-btn">Order Now</button>
+
+<button class="add-cart">Add Cart</button>
+
+<button class="view-btn">Quick View</button>
+
+</div>
+
+</div>
+
+<!-- ================= ITEM 8 ================= -->
+
+<div class="product-card"
+data-id="8"
+data-name="French Fries"
+data-price="160"
+data-category="Snacks">
+
+<div class="wishlist-icon">
+<i class="fa-regular fa-heart"></i>
+</div>
+
+<img src="images/fries.jpg" alt="Fries">
+
+<h3>French Fries</h3>
+
+<p>Crispy golden fries with cheese dip.</p>
+
+<div class="rating">★★★★★</div>
+
+<p class="stock">✔ Freshly Available</p>
+
+<div class="price">
+<h2>₹160</h2>
+<del>₹210</del>
+</div>
+
+<div class="card-buttons">
+
+<button class="buy-btn">Order Now</button>
+
+<button class="add-cart">Add Cart</button>
+
+<button class="view-btn">Quick View</button>
+
+</div>
+
+</div>
+
+<!-- ================= ITEM 9 ================= -->
+
+<div class="product-card"
+data-id="9"
+data-name="Blue Lagoon Mojito"
+data-price="210"
+data-category="Drinks">
+
+<div class="wishlist-icon">
+<i class="fa-regular fa-heart"></i>
+</div>
+
+<span class="badge new">NEW</span>
+
+<img src="images/mojito.jpg" alt="Mojito">
+
+<h3>Blue Lagoon Mojito</h3>
+
+<p>Refreshing mint & lemon cooler.</p>
+
+<div class="rating">★★★★★</div>
+
+<p class="stock">✔ Freshly Available</p>
+
+<div class="price">
+<h2>₹210</h2>
+<del>₹250</del>
+</div>
+
+<div class="card-buttons">
+
+<button class="buy-btn">Order Now</button>
+
+<button class="add-cart">Add Cart</button>
+
+<button class="view-btn">Quick View</button>
+
+</div>
+
+</div>
+
+<!-- ================= ITEM 10 ================= -->
+
+<div class="product-card"
+data-id="10"
+data-name="Belgian Waffles"
+data-price="280"
+data-category="Dessert">
+
+<div class="wishlist-icon">
+<i class="fa-regular fa-heart"></i>
+</div>
+
+<img src="images/waffle.jpg" alt="Waffle">
+
+<h3>Belgian Waffles</h3>
+
+<p>Served with maple syrup and berries.</p>
+
+<div class="rating">★★★★★</div>
+
+<p class="stock">✔ Freshly Available</p>
+
+<div class="price">
+<h2>₹280</h2>
+<del>₹340</del>
+</div>
+
+<div class="card-buttons">
+
+<button class="buy-btn">Order Now</button>
+
+<button class="add-cart">Add Cart</button>
+
+<button class="view-btn">Quick View</button>
+
+</div>
+
+</div>
+
+<!-- ================= ITEM 11 ================= -->
+
+<div class="product-card"
+data-id="11"
+data-name="Classic Cheesecake"
+data-price="290"
+data-category="Dessert">
+
+<div class="wishlist-icon">
+<i class="fa-regular fa-heart"></i>
+</div>
+
+<img src="images/cheesecake.jpg" alt="Cheesecake">
+
+<h3>Classic Cheesecake</h3>
+
+<p>New York style creamy cheesecake.</p>
+
+<div class="rating">★★★★★</div>
+
+<p class="stock">✔ Freshly Available</p>
+
+<div class="price">
+<h2>₹290</h2>
+<del>₹360</del>
+</div>
+
+<div class="card-buttons">
+
+<button class="buy-btn">Order Now</button>
+
+<button class="add-cart">Add Cart</button>
+
+<button class="view-btn">Quick View</button>
+
+</div>
+
+</div>
+
+<!-- ================= ITEM 12 ================= -->
+
+<div class="product-card"
+data-id="12"
+data-name="Chicken Burger"
+data-price="320"
+data-category="Snacks">
+
+<div class="wishlist-icon">
+<i class="fa-regular fa-heart"></i>
+</div>
+
+<span class="badge">BEST SELLER</span>
+
+<img src="images/burger.jpg" alt="Burger">
+
+<h3>Chicken Burger</h3>
+
+<p>Juicy grilled chicken with cheese.</p>
+
+<div class="rating">★★★★★</div>
+
+<p class="stock">✔ Freshly Available</p>
+
+<div class="price">
+<h2>₹320</h2>
+<del>₹390</del>
+</div>
+
+<div class="card-buttons">
+
+<button class="buy-btn">Order Now</button>
+
+<button class="add-cart">Add Cart</button>
+
+<button class="view-btn">Quick View</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================
+      WISHLIST SIDEBAR
+======================= -->
+
+<div class="wishlist-sidebar" id="wishlistSidebar">
+
+<div class="wishlist-header">
+
+<h2>❤️ Wishlist</h2>
+
+<button id="closeWishlist">&times;</button>
+
+</div>
+
+<div id="wishlistItems">
+
+<p class="empty">
+
+Your wishlist is empty.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ======================
+      CART SIDEBAR
+======================= -->
+
+<div class="cart-sidebar" id="cartSidebar">
+
+<div class="cart-header">
+
+<h2>
+
+Your Cart
+
+</h2>
+
+<button id="closeCart">
+
+&times;
+
+</button>
+
+</div>
+
+<div id="cartItems">
+
+<p class="empty">
+
+Your cart is empty.
+
+</p>
+
+</div>
+
+<div class="cart-footer">
+
+<p>
+
+Subtotal
+
+₹<span id="subTotal">
+
+0
+
+</span>
+
+</p>
+
+<p>
+
+GST (5%)
+
+₹<span id="gst">
+
+0
+
+</span>
+
+</p>
+
+<p>
+
+Service Charge
+
+₹<span id="serviceCharge">
+
+40
+
+</span>
+
+</p>
+
+<p>
+
+Discount
+
+₹<span id="discount">
+
+0
+
+</span>
+
+</p>
+
+<input
+type="text"
+id="couponInput"
+placeholder="Enter Coupon Code">
+
+<button id="applyCoupon">
+
+Apply Coupon
+
+</button>
+
+<hr>
+
+<h2>
+
+Grand Total
+
+₹<span id="cartTotal">
+
+0
+
+</span>
+
+</h2>
+
+<button id="checkoutBtn">
+
+Proceed to Checkout
+
+</button>
+
+</div>
+
+</div>
+
+<div id="overlay"></div>
+<!-- ==========================
+        QUICK VIEW MODAL
+=========================== -->
+
+<div class="product-modal" id="productModal">
+
+<div class="product-modal-content">
+
+<button id="closeProductModal">&times;</button>
+
+<img id="modalImage"
+src=""
+alt="Food">
+
+<div class="modal-details">
+
+<span class="modal-badge">
+
+Chef's Special
+
+</span>
+
+<h2 id="modalTitle">
+
+Food Name
+
+</h2>
+
+<div class="modal-rating">
+
+★★★★★
+
+<span>(4.9)</span>
+
+</div>
+
+<p id="modalDescription">
+
+Freshly prepared using premium ingredients.
+
+</p>
+
+<h3>
+
+₹<span id="modalPrice">0</span>
+
+</h3>
+
+<p class="delivery">
+
+🚴 Delivery in 20-30 mins
+
+</p>
+
+<div class="modal-buttons">
+
+<button id="modalWishlist">
+
+❤️ Wishlist
+
+</button>
+
+<button id="modalCart">
+
+🛒 Add to Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ==========================
+        INVOICE MODAL
+=========================== -->
+
+<div class="invoice-modal"
+id="invoiceModal">
+
+<div class="invoice-box">
+
+<h2>
+
+☕ Brew & Bloom Café
+
+</h2>
+
+<p>
+
+Thank you for dining with us!
+
+</p>
+
+<hr>
+
+<div id="invoiceItems">
+
+</div>
+
+<hr>
+
+<div class="invoice-summary">
+
+<p>
+
+Subtotal
+
+<span>
+
+₹<span id="invoiceSubtotal">
+
+0
+
+</span>
+
+</span>
+
+</p>
+
+<p>
+
+GST (5%)
+
+<span>
+
+₹<span id="invoiceGST">
+
+0
+
+</span>
+
+</span>
+
+</p>
+
+<p>
+
+Service Charge
+
+<span>
+
+₹40
+
+</span>
+
+</p>
+
+<p>
+
+Discount
+
+<span>
+
+₹<span id="invoiceDiscount">
+
+0
+
+</span>
+
+</span>
+
+</p>
+
+<hr>
+
+<h3>
+
+Grand Total
+
+₹<span id="invoiceTotal">
+
+0
+
+</span>
+
+</h3>
+
+</div>
+
+<div class="invoice-buttons">
+
+<button id="printInvoice">
+
+🖨 Print Bill
+
+</button>
+
+<button id="confirmOrder">
+
+💳 Pay Now
+
+</button>
+
+<button id="closeInvoice">
+
+Close
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ==========================
+        SUCCESS POPUP
+=========================== -->
+
+<div class="success-popup"
+
+id="successPopup">
+
+<div class="success-content">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2>
+
+Order Confirmed!
+
+</h2>
+
+<p>
+
+Thank you for visiting
+
+Brew & Bloom Café.
+
+<br>
+
+Your order is being prepared.
+
+</p>
+
+<button id="continueShopping">
+
+Continue Ordering
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ==========================
+        GALLERY
+=========================== -->
+
+<section class="gallery"
+
+id="gallery">
+
+<h2>
+
+Our Café Gallery
+
+</h2>
+
+<div class="gallery-grid">
+
+<img src="images/gallery1.jpg">
+
+<img src="images/gallery2.jpg">
+
+<img src="images/gallery3.jpg">
+
+<img src="images/gallery4.jpg">
+
+<img src="images/gallery5.jpg">
+
+<img src="images/gallery6.jpg">
+
+</div>
+
+</section>
+
+<!-- ==========================
+        CUSTOMER REVIEWS
+=========================== -->
+
+<section class="reviews">
+
+<h2>
+
+Customer Reviews
+
+</h2>
+
+<div class="review-grid">
+
+<div class="review-card">
+
+<img src="images/user1.jpg">
+
+<h3>
+
+Priya
+
+</h3>
+
+<div class="rating">
+
+★★★★★
+
+</div>
+
+<p>
+
+Amazing ambience,
+
+excellent coffee,
+
+and delicious desserts.
+
+</p>
+
+</div>
+
+<div class="review-card">
+
+<img src="images/user2.jpg">
+
+<h3>
+
+Rahul
+
+</h3>
+
+<div class="rating">
+
+★★★★★
+
+</div>
+
+<p>
+
+Best café in town.
+
+Loved the Alfredo Pasta.
+
+</p>
+
+</div>
+
+<div class="review-card">
+
+<img src="images/user3.jpg">
+
+<h3>
+
+Sneha
+
+</h3>
+
+<div class="rating">
+
+★★★★★
+
+</div>
+
+<p>
+
+Beautiful wooden interiors
+
+and friendly staff.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+        CONTACT
+=========================== -->
+
+<section class="contact"
+
+id="contact">
+
+<h2>
+
+Visit Us
+
+</h2>
+
+<div class="contact-grid">
+
+<div>
+
+<h3>
+
+📍 Address
+
+</h3>
+
+<p>
+
+Brew & Bloom Café
+
+MG Road,
+
+Pondicherry
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+📞 Phone
+
+</h3>
+
+<p>
+
++91 98765 43210
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+📧 Email
+
+</h3>
+
+<p>
+
+brewbloom@email.com
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+🕒 Opening Hours
+
+</h3>
+
+<p>
+
+Mon - Sun
+
+9:00 AM - 10:00 PM
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+        FOOTER
+=========================== -->
+
+<footer>
+
+<div class="footer-container">
+
+<div>
+
+<h2>
+
+☕ Brew & Bloom
+
+</h2>
+
+<p>
+
+Freshly Brewed Happiness
+
+Every Single Day.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+Quick Links
+
+</h3>
+
+<a href="#">Home</a>
+
+<a href="#menu">Menu</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+<div>
+
+<h3>
+
+Follow Us
+
+</h3>
+
+<p>
+
+<i class="fab fa-instagram"></i>
+
+Instagram
+
+</p>
+
+<p>
+
+<i class="fab fa-facebook"></i>
+
+Facebook
+
+</p>
+
+<p>
+
+<i class="fab fa-x-twitter"></i>
+
+Twitter
+
+</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+
+© 2026 Brew & Bloom Café.
+
+Designed with ❤️ using HTML, CSS & JavaScript.
+
+</p>
+
+</footer>
+
+<script src="shop.js"></script>
+
+</body>
+
+</html>

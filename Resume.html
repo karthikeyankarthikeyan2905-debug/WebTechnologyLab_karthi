@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthikeyan M | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+/* ===============================
+   GOOGLE FONT
+=============================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===============================
+   RESET
+=============================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fafafa;
+    color:#333;
+    line-height:1.8;
+}
+
+/* ===============================
+   HEADER
+=============================== */
+
+header{
+    background:#ffffff;
+    padding:45px 10%;
+    border-bottom:4px solid #2500f4;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.profile img{
+    width:190px;
+    height:190px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #0010f4;
+    box-shadow:0 10px 25px rgba(244,180,0,.25);
+    transition:.3s;
+}
+
+.profile img:hover{
+    transform:scale(1.05);
+}
+
+.profile-text{
+    flex:1;
+}
+
+.profile-text h1{
+    font-size:50px;
+    color:#222;
+    margin-bottom:8px;
+}
+
+.profile-text h3{
+    color:#2500f4;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.profile-text p{
+    max-width:650px;
+    color:#666;
+    font-size:17px;
+}
+
+/* ===============================
+   NAVIGATION
+=============================== */
+
+nav{
+    background:white;
+    display:flex;
+    justify-content:center;
+    position:sticky;
+    top:0;
+    padding:18px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+nav a{
+    text-decoration:none;
+    color:#444;
+    margin:0 18px;
+    font-weight:500;
+    transition:.3s;
+    position:relative;
+}
+
+nav a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:#1800f4;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition:.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+nav a:hover{
+    color:#1000f4;
+}
+
+/* ===============================
+   SECTION
+=============================== */
+
+section{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    background:white;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+section:hover{
+    transform:translateY(-5px);
+}
+
+h2{
+    font-size:30px;
+    color:#222;
+    border-left:6px solid #0018f4;
+    padding-left:15px;
+    margin-bottom:25px;
+}
+
+p{
+    color:#666;
+}
+
+/* ===============================
+   EDUCATION
+=============================== */
+
+.card{
+    background:#fffdf5;
+    border-left:5px solid #2500f4;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateX(8px);
+}
+
+.card h3{
+    margin-bottom:8px;
+    color:#222;
+}
+
+.card span{
+    color:#888;
+}
+
+/* ===============================
+   SKILLS
+=============================== */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:35px;
+}
+
+.skill{
+    background:#fff4cc;
+    color:#333;
+    padding:12px 22px;
+    border-radius:30px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.skill:hover{
+    background:#1800f4;
+    color:white;
+    transform:translateY(-4px);
+}
+
+/* ===============================
+   PROJECTS
+=============================== */
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    border-top:5px solid #0018f4;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.project:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+}
+
+.project h3{
+    color:#222;
+    margin-bottom:12px;
+}
+
+/* ===============================
+   LISTS
+=============================== */
+
+ul{
+    margin-left:25px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* ===============================
+   LINKS
+=============================== */
+
+a{
+    color:#002df4;
+}
+
+a:hover{
+    color:#000ed8;
+}
+
+/* ===============================
+   FOOTER
+=============================== */
+
+footer{
+    background:rgb(255, 255, 255);
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+    border-top:4px solid #0018f4;
+    color:#666666;
+}
+
+/* ===============================
+   SCROLLBAR
+=============================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#eee;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#0400f4;
+    border-radius:10px;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+
+@media(max-width:768px){
+
+header{
+    padding:35px 8%;
+}
+
+.profile{
+    flex-direction:column;
+    text-align:center;
+}
+
+.profile img{
+    width:160px;
+    height:160px;
+}
+
+.profile-text h1{
+    font-size:38px;
+}
+
+nav{
+    flex-wrap:wrap;
+}
+
+nav a{
+    margin:8px 12px;
+}
+
+section{
+    width:95%;
+    padding:25px;
+}
+
+.project-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="profile">
+
+            <img src="karthi.jpg.jpeg" alt="Profile Picture">
+
+            <div class="profile-text">
+
+                <h1>Karthikeyan M</h1>
+
+                <h3>Computer Science Student | Aspiring Full Stack Developer</h3>
+
+                <p>
+                    Passionate about Web Development, Python,
+                    FastAPI, and creating modern web applications.
+                    I enjoy solving real-world problems through
+                    technology and continuously learning new skills.
+                </p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav>
+
+        <a href="#about">About</a>
+
+        <a href="#education">Education</a>
+
+        <a href="#skills">Skills</a>
+
+        <a href="#projects">Projects</a>
+
+        <a href="#certificates">Certificates</a>
+
+        <a href="#achievements">Achievements</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+
+            Hello! I'm Karthikeyan M<Main></Main> <Main></Main>, a Computer Science student
+            passionate about Full Stack Development.
+
+            I enjoy building modern websites,
+            learning new technologies,
+            and creating user-friendly applications.
+
+            My interests include Python, FastAPI,
+            Web Development,
+            Database Management Systems,
+            and Cloud Computing.
+
+        </p>
+
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <div class="card">
+
+            <h3>Bachelor of Computer Science</h3>
+
+            <p>XYZ College</p>
+
+            <span>2023 – Present</span>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Higher Secondary</h3>
+
+            <p>SDA Higher Secondary School</p>
+
+            <span>2021 – 2023</span>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">HTML5</div>
+
+            <div class="skill">CSS3</div>
+
+            <div class="skill">JavaScript</div>
+
+            <div class="skill">Python</div>
+
+            <div class="skill">FastAPI</div>
+
+            <div class="skill">SQL</div>
+
+            <div class="skill">Git</div>
+
+            <div class="skill">GitHub</div>
+
+        </div>
+
+        <h2>Soft Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">Leadership</div>
+
+            <div class="skill">Communication</div>
+
+            <div class="skill">Problem Solving</div>
+
+            <div class="skill">Team Work</div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects">
+
+    <h2>Projects</h2>
+
+    <p>
+        <a href="lab.html"
+           style="color:rgb(241, 233, 233); font-size:18px; font-weight:500; text-decoration:none;">
+            Web Technology Lab Exercises
+        </a>
+    </p>
+
+</section>
+    <!-- ================= CERTIFICATES ================= -->
+
+    <section id="certificates">
+
+        <h2>Certificates</h2>
+
+        <ul>
+
+            <li>Python Programming</li>
+
+            <li>Java Programming</li>
+
+            <li>Web Development</li>
+
+            <li>Cloud Computing Fundamentals</li>
+
+        </ul>
+
+    </section>
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+
+    <section id="achievements">
+
+        <h2>Achievements</h2>
+
+        <ul>
+
+            <li>Secretary of Computer Science Association</li>
+
+            <li>Presented papers at conferences</li>
+
+            <li>Participated in Hackathons</li>
+
+            <li>Academic Excellence</li>
+
+        </ul>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <p><strong>Email:</strong> karthik@gmail.com</p>
+
+        <p><strong>Phone:</strong> +91 6383197209</p>
+
+        <p><strong>Location:</strong> Pondicherry, India</p>
+
+        <p>
+
+            <strong>GitHub:</strong>
+
+            <a href="#">github.com/yourusername</a>
+
+        </p>
+
+        <p>
+
+            <strong>LinkedIn:</strong>
+
+            <a href="#">linkedin.com/in/yourprofile</a>
+
+        </p>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Karthikeyan M | Portfolio Website
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+

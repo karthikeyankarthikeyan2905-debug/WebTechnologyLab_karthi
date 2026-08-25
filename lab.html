@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Dashboard</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#6a11cb);
+    background-size:400% 400%;
+    animation:bg 10s ease infinite;
+    overflow:hidden;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* Floating circles */
+
+body::before{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    background:#00f5ff;
+    border-radius:50%;
+    filter:blur(120px);
+    top:-120px;
+    left:-100px;
+}
+
+body::after{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    background:#ff0080;
+    border-radius:50%;
+    filter:blur(120px);
+    bottom:-120px;
+    right:-100px;
+}
+
+.container{
+    width:90%;
+    max-width:1250px;
+    z-index:10;
+}
+
+h1{
+    text-align:center;
+    color:white;
+    margin-bottom:40px;
+    font-size:48px;
+    letter-spacing:3px;
+    text-shadow:0 0 20px cyan;
+}
+
+.dashboard{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+}
+
+.card{
+
+    position:relative;
+    text-decoration:none;
+    color:white;
+    padding:35px;
+    border-radius:20px;
+    overflow:hidden;
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    transition:.5s;
+
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+
+}
+
+.card::before{
+
+    content:"";
+    position:absolute;
+    width:150%;
+    height:150%;
+    background:linear-gradient(45deg,
+    transparent,
+    rgba(255,255,255,.4),
+    transparent);
+
+    top:-100%;
+    left:-100%;
+
+    transition:.7s;
+}
+
+.card:hover::before{
+
+    top:100%;
+    left:100%;
+
+}
+
+.card:hover{
+
+    transform:translateY(-15px) scale(1.05);
+
+    box-shadow:
+    0 0 15px cyan,
+    0 0 30px cyan,
+    0 0 60px cyan;
+
+}
+
+.icon{
+
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.title{
+
+    font-size:25px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.desc{
+
+    font-size:15px;
+    opacity:.8;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>🚀 MY DASHBOARD</h1>
+
+<div class="dashboard">
+
+<a href="shop.html" class="card">
+<div class="icon">🛒</div>
+<div class="title">Shopping</div>
+<div class="desc">Online Shopping Page</div>
+</a>
+
+<a href="quiz.html" class="card">
+<div class="icon">❓</div>
+<div class="title">Quiz</div>
+<div class="desc">Practice Questions</div>
+</a>
+
+<a href="Calculator.html" class="card">
+<div class="icon">🧮</div>
+<div class="title">Calculator</div>
+<div class="desc">Simple Calculator</div>
+</a>
+
+<a href="employee/index.php" class="card">
+<div class="icon">💼</div>
+<div class="title">Employment</div>
+<div class="desc">Employment Details</div>
+</a>
+
+<a href="department_website/index.php" class="card">
+<div class="icon">🏢</div>
+<div class="title">Department</div>
+<div class="desc">Department Information</div>
+</a>
+
+<a href="Company.html" class="card">
+<div class="icon">🏭</div>
+<div class="title">Company</div>
+<div class="desc">Company Details</div>
+</a>
+
+<a href="Contacts.html" class="card">
+<div class="icon">📞</div>
+<div class="title">Contacts</div>
+<div class="desc">Contact Information</div>
+</a>
+
+<a href="Weather API.html" class="card">
+<div class="icon">🌦</div>
+<div class="title">Weather API</div>
+<div class="desc">Weather Forecast</div>
+</a>
+
+<a href="Books API.html" class="card">
+<div class="icon">📚</div>
+<div class="title">Books API</div>
+<div class="desc">Book Search</div>
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
