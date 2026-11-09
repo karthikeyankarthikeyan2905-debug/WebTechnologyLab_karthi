@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Weather Details</title>
+    <title>Book Details</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
 
-<h2>Weather Information</h2>
+<h2>Book Information</h2>
 
-<button onclick="getWeather()">Get Weather</button>
+<button id="load">Load Books</button>
 
-<div id="result"></div>
+<ul id="books"></ul>
 
 <script>
-function getWeather() {
-    var xhr = new XMLHttpRequest();
+$(document).ready(function() {
 
-    xhr.open("GET", "weather.json", true);
+    $("#load").click(function() {
 
-    xhr.onload = function() {
-        if (xhr.status == 200) {
-            var data = JSON.parse(xhr.responseText);
+        $.ajax({
+            url: "books.json",
+            type: "GET",
+            dataType: "json",
 
-            document.getElementById("result").innerHTML =
-                "City: " + data.city + "<br>" +
-                "Temperature: " + data.temperature + "°C<br>" +
-                "Condition: " + data.condition;
-        }
-    };
+            success: function(data) {
 
-    xhr.send();
-}
+                $("#books").empty();
+
+                $.each(data, function(index, book) {
+                    $("#books").append(
+                        "<li>" + book.title +
+                        " - " + book.author + "</li>"
+                    );
+                });
+            }
+        });
+
+    });
+
+});
 </script>
 
 </body>
